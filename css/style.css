@@ -1,0 +1,789 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+/* line 4, D:/proj/idea/toolkit/sass/style.sass */
+body {
+  font-family: "Open Sans", Sans-serif;
+  background: white;
+  min-width: 1200px;
+  min-height: 200px;
+  color: black;
+}
+
+/* line 11, D:/proj/idea/toolkit/sass/style.sass */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 20, D:/proj/idea/toolkit/sass/style.sass */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 25, D:/proj/idea/toolkit/sass/style.sass */
+.fl {
+  float: left;
+}
+
+/* line 28, D:/proj/idea/toolkit/sass/style.sass */
+.fr {
+  float: right;
+}
+
+/* line 31, D:/proj/idea/toolkit/sass/style.sass */
+.cb {
+  clear: both;
+}
+
+/* line 34, D:/proj/idea/toolkit/sass/style.sass */
+input.error, textarea.error {
+  box-shadow: 0 0 5px red !important;
+}
+
+/* line 37, D:/proj/idea/toolkit/sass/style.sass */
+label.error {
+  display: none !important;
+}
+
+/* line 45, D:/proj/idea/toolkit/sass/style.sass */
+header, footer {
+  height: 80px;
+  background: #dddddd;
+}
+/* line 48, D:/proj/idea/toolkit/sass/style.sass */
+header nav, footer nav {
+  float: left;
+  margin: 15px auto 0;
+}
+/* line 52, D:/proj/idea/toolkit/sass/style.sass */
+header nav ul, footer nav ul {
+  font-size: 14px;
+  padding: 0;
+  font-weight: bold;
+}
+/* line 56, D:/proj/idea/toolkit/sass/style.sass */
+header nav ul li, footer nav ul li {
+  display: inline-block;
+  float: left;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+/* line 61, D:/proj/idea/toolkit/sass/style.sass */
+header nav ul a, footer nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 64, D:/proj/idea/toolkit/sass/style.sass */
+header .addr, footer .addr {
+  text-align: right;
+  margin-top: 10px;
+}
+/* line 67, D:/proj/idea/toolkit/sass/style.sass */
+header .addr h2, footer .addr h2 {
+  background: url(../img/call.png) left center no-repeat;
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0;
+  padding-right: 20px;
+}
+/* line 74, D:/proj/idea/toolkit/sass/style.sass */
+header .addr p, footer .addr p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* line 78, D:/proj/idea/toolkit/sass/style.sass */
+.top {
+  background: url(../img/top.jpg) center no-repeat;
+  height: 829px;
+}
+/* line 79, D:/proj/idea/toolkit/sass/style.sass */
+.top .wrapper {
+  margin-top: -14px;
+}
+/* line 86, D:/proj/idea/toolkit/sass/style.sass */
+.top .form {
+  width: 320px;
+  height: 609px;
+  background: #595959;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 92, D:/proj/idea/toolkit/sass/style.sass */
+.top .form .caption {
+  padding-top: 15px;
+}
+/* line 95, D:/proj/idea/toolkit/sass/style.sass */
+.top .form .caption h3 {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+/* line 103, D:/proj/idea/toolkit/sass/style.sass */
+.top .form h4 {
+  margin-top: 22px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: normal;
+  color: white;
+  display: inherit;
+  line-height: 1.6em;
+}
+/* line 112, D:/proj/idea/toolkit/sass/style.sass */
+.top .form h4.left {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+/* line 116, D:/proj/idea/toolkit/sass/style.sass */
+.top .form h4 span {
+  font-size: 15px;
+  text-align: center;
+  font-weight: normal;
+  color: white;
+  padding-left: 27px;
+  background: url(../img/call_white.png) left center no-repeat;
+}
+/* line 123, D:/proj/idea/toolkit/sass/style.sass */
+.top .form .captionMiddle {
+  width: 280px;
+  margin: -30px auto auto;
+  border-bottom: 1px solid white;
+}
+
+/* line 129, D:/proj/idea/toolkit/sass/style.sass */
+.flip-clock-dot {
+  visibility: hidden;
+}
+
+/* line 132, D:/proj/idea/toolkit/sass/style.sass */
+.flip-clock-wrapper ul li a div div.inn {
+  color: #3d3d3d;
+  background-color: #d9d9d9;
+}
+
+/* line 137, D:/proj/idea/toolkit/sass/style.sass */
+.clock {
+  -webkit-transform: scale(0.7, 0.7);
+  -moz-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+  padding-top: 0px;
+  margin-left: -68px;
+  width: 561px;
+  margin-top: -15px;
+}
+
+/* line 145, D:/proj/idea/toolkit/sass/style.sass */
+span .flip-clock-label {
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  left: 40px;
+  top: 108px !important;
+}
+
+/* line 153, D:/proj/idea/toolkit/sass/style.sass */
+.flip-clock-wrapper {
+  font: inherit;
+}
+/* line 155, D:/proj/idea/toolkit/sass/style.sass */
+.flip-clock-wrapper ul {
+  margin: 1px;
+}
+
+/* line 158, D:/proj/idea/toolkit/sass/style.sass */
+.frm, .formWide .frmW {
+  height: 257px;
+}
+/* line 162, D:/proj/idea/toolkit/sass/style.sass */
+.frm form input, .formWide .frmW form input {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding-left: 14px;
+  width: 280px;
+  height: 40px;
+  background: white;
+  display: block;
+  margin: auto auto 20px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+}
+/* line 172, D:/proj/idea/toolkit/sass/style.sass */
+.frm form .button, .formWide .frmW form .button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  width: 280px;
+  height: 60px;
+  background: #068136;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5cee71), color-stop(100%, #068136));
+  background: -webkit-linear-gradient(top, #5cee71, #068136);
+  background: -moz-linear-gradient(top, #5cee71, #068136);
+  background: -o-linear-gradient(top, #5cee71, #068136);
+  background: linear-gradient(top, #5cee71, #068136);
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  margin: 20px auto auto 20px;
+  font-size: 26px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+}
+/* line 185, D:/proj/idea/toolkit/sass/style.sass */
+.frm form .button:hover, .formWide .frmW form .button:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #068136), color-stop(100%, #5cee71));
+  background: -webkit-linear-gradient(top, #068136, #5cee71);
+  background: -moz-linear-gradient(top, #068136, #5cee71);
+  background: -o-linear-gradient(top, #068136, #5cee71);
+  background: linear-gradient(top, #068136, #5cee71);
+  background: #5cee71;
+}
+
+/* line 190, D:/proj/idea/toolkit/sass/style.sass */
+.chosen h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* line 194, D:/proj/idea/toolkit/sass/style.sass */
+.chosen .item {
+  margin-bottom: 20px;
+}
+/* line 196, D:/proj/idea/toolkit/sass/style.sass */
+.chosen .item img {
+  width: 125px;
+  height: 125px;
+  float: left;
+  margin-left: 20px;
+}
+/* line 202, D:/proj/idea/toolkit/sass/style.sass */
+.chosen .item h4 {
+  text-align: left;
+  float: left;
+  font-size: 16px;
+  width: 320px;
+  padding-left: 20px;
+  margin-top: 0;
+  font-weight: normal;
+}
+/* line 210, D:/proj/idea/toolkit/sass/style.sass */
+.chosen .attention {
+  margin-top: -10px;
+}
+/* line 212, D:/proj/idea/toolkit/sass/style.sass */
+.chosen .attention img {
+  width: 222px;
+  height: 257px;
+  float: left;
+  margin-right: 25px;
+}
+/* line 217, D:/proj/idea/toolkit/sass/style.sass */
+.chosen .attention .prof {
+  color: white;
+  width: 712px;
+  background: #339256;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #339256), color-stop(100%, #16a72e));
+  background: -webkit-linear-gradient(top, #339256, #16a72e);
+  background: -moz-linear-gradient(top, #339256, #16a72e);
+  background: -o-linear-gradient(top, #339256, #16a72e);
+  background: linear-gradient(top, #339256, #16a72e);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* line 225, D:/proj/idea/toolkit/sass/style.sass */
+.chosen .attention .prof p {
+  font-size: 48px;
+  display: inline-block;
+  margin: 0;
+  float: left;
+  padding-left: 15px;
+}
+/* line 231, D:/proj/idea/toolkit/sass/style.sass */
+.chosen .attention .prof h4 {
+  padding-left: 15px;
+  font-weight: normal;
+  margin-top: 13px;
+  margin-left: 0;
+  margin-right: 0;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  float: left;
+  width: 660px;
+}
+
+/* line 244, D:/proj/idea/toolkit/sass/style.sass */
+.how {
+  height: 445px;
+  background: url(../img/bg_yellow.png) center no-repeat;
+  margin-top: -80px;
+  text-align: center;
+}
+/* line 245, D:/proj/idea/toolkit/sass/style.sass */
+.how .wrapper {
+  width: 1000px;
+}
+/* line 252, D:/proj/idea/toolkit/sass/style.sass */
+.how h2 {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 258, D:/proj/idea/toolkit/sass/style.sass */
+.how .items h3 {
+  font-size: 18px;
+}
+/* line 260, D:/proj/idea/toolkit/sass/style.sass */
+.how .items .item {
+  width: 330px;
+}
+/* line 262, D:/proj/idea/toolkit/sass/style.sass */
+.how h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* line 266, D:/proj/idea/toolkit/sass/style.sass */
+.formWide {
+  background: url(../img/bg_form.jpg) center no-repeat;
+  height: 269px;
+  text-align: center;
+}
+/* line 270, D:/proj/idea/toolkit/sass/style.sass */
+.formWide h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-shadow: 1px 2px 1px black;
+}
+/* line 277, D:/proj/idea/toolkit/sass/style.sass */
+.formWide h2 span {
+  font-weight: bold;
+}
+/* line 279, D:/proj/idea/toolkit/sass/style.sass */
+.formWide h3 {
+  color: white;
+  font-size: 17px;
+  font-weight: normal;
+  text-shadow: 1px 2px 1px black;
+}
+/* line 284, D:/proj/idea/toolkit/sass/style.sass */
+.formWide h3 span {
+  background: url(../img/call_white_big.png) left no-repeat;
+  padding-left: 30px;
+  font-size: 22px;
+}
+/* line 289, D:/proj/idea/toolkit/sass/style.sass */
+.formWide .frmW {
+  height: inherit;
+  background: none;
+}
+/* line 294, D:/proj/idea/toolkit/sass/style.sass */
+.formWide .frmW form {
+  text-align: center;
+}
+/* line 296, D:/proj/idea/toolkit/sass/style.sass */
+.formWide .frmW form .pencils {
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+}
+/* line 300, D:/proj/idea/toolkit/sass/style.sass */
+.formWide .frmW form input {
+  margin-right: 20px;
+  display: inline-block;
+}
+/* line 303, D:/proj/idea/toolkit/sass/style.sass */
+.formWide .frmW form .button {
+  display: inline-block;
+  margin: 0 0 0 -20px;
+}
+
+/* line 308, D:/proj/idea/toolkit/sass/style.sass */
+.reviews {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+/* line 312, D:/proj/idea/toolkit/sass/style.sass */
+.reviews h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 316, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .slider {
+  height: 412px;
+  margin-bottom: 40px;
+}
+/* line 320, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .items {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 324, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .items h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 1.1em;
+  margin-top: 24px;
+}
+/* line 331, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .items h4 {
+  font-size: 17px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+}
+/* line 337, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .items h5 {
+  font-size: 12px;
+  color: #b8b8b8;
+}
+/* line 340, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .items .item {
+  width: 320px;
+  background: none;
+}
+/* line 343, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .items .item:last-child {
+  background: none;
+}
+/* line 345, D:/proj/idea/toolkit/sass/style.sass */
+.reviews button {
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  letter-spacing: -1px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 1px black;
+}
+/* line 357, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .button {
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
+  padding-top: 8px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+}
+/* line 370, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .comments {
+  background: #f7a211;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffd960), color-stop(100%, #f7a211));
+  background: -webkit-linear-gradient(top, #ffd960, #f7a211);
+  background: -moz-linear-gradient(top, #ffd960, #f7a211);
+  background: -o-linear-gradient(top, #ffd960, #f7a211);
+  background: linear-gradient(top, #ffd960, #f7a211);
+  margin-right: 10px;
+}
+/* line 375, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .comments:hover {
+  background: #fdca41;
+}
+/* line 377, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .write {
+  background: #068136;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5cee71), color-stop(100%, #068136));
+  background: -webkit-linear-gradient(top, #5cee71, #068136);
+  background: -moz-linear-gradient(top, #5cee71, #068136);
+  background: -o-linear-gradient(top, #5cee71, #068136);
+  background: linear-gradient(top, #5cee71, #068136);
+}
+/* line 380, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .write:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #068136), color-stop(100%, #5cee71));
+  background: -webkit-linear-gradient(top, #068136, #5cee71);
+  background: -moz-linear-gradient(top, #068136, #5cee71);
+  background: -o-linear-gradient(top, #068136, #5cee71);
+  background: linear-gradient(top, #068136, #5cee71);
+  background: #5cee71;
+}
+/* line 384, D:/proj/idea/toolkit/sass/style.sass */
+.reviews button:active {
+  -webkit-box-shadow: 0 0 0 black;
+  -moz-box-shadow: 0 0 0 black;
+  box-shadow: 0 0 0 black;
+}
+/* line 386, D:/proj/idea/toolkit/sass/style.sass */
+.reviews .button:active {
+  -webkit-box-shadow: 0 0 0 black;
+  -moz-box-shadow: 0 0 0 black;
+  box-shadow: 0 0 0 black;
+}
+
+/* line 389, D:/proj/idea/toolkit/sass/style.sass */
+.mln {
+  margin-top: 20px;
+  border-top: 1px solid black;
+  margin-bottom: 10px;
+}
+/* line 393, D:/proj/idea/toolkit/sass/style.sass */
+.mln h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+/* line 397, D:/proj/idea/toolkit/sass/style.sass */
+.mln h2 span {
+  color: white;
+  font-weight: bold;
+  background: url(../img/circle.png) center no-repeat;
+  padding-top: 44px;
+  width: 135px;
+  height: 135px;
+  display: inline-block;
+}
+/* line 405, D:/proj/idea/toolkit/sass/style.sass */
+.mln .russia {
+  background: url(../img/russia.png) left center no-repeat;
+  height: 400px;
+  width: 1030px;
+  margin-left: -50px;
+  font-size: 18px;
+}
+/* line 412, D:/proj/idea/toolkit/sass/style.sass */
+.mln .russia .text h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+}
+/* line 417, D:/proj/idea/toolkit/sass/style.sass */
+.mln .russia .text h4 {
+  font-weight: normal;
+  text-align: left;
+  margin-top: 0;
+}
+/* line 421, D:/proj/idea/toolkit/sass/style.sass */
+.mln .russia .text ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 30px;
+}
+/* line 425, D:/proj/idea/toolkit/sass/style.sass */
+.mln .russia .text ul li {
+  display: block;
+  width: 460px;
+  height: 110px;
+  padding-left: 90px;
+  padding-top: 15px;
+}
+/* line 431, D:/proj/idea/toolkit/sass/style.sass */
+.mln .russia .text ul li span {
+  font-weight: bold;
+}
+/* line 434, D:/proj/idea/toolkit/sass/style.sass */
+.mln .russia .text ul li.mln1 {
+  background: url(../img/mln1.png) left center no-repeat;
+}
+/* line 436, D:/proj/idea/toolkit/sass/style.sass */
+.mln .russia .text ul li.mln2 {
+  background: url(../img/mln2.png) left center no-repeat;
+}
+
+/* line 439, D:/proj/idea/toolkit/sass/style.sass */
+.work {
+  background: url(../img/work.jpg) center no-repeat;
+  height: 488px;
+}
+/* line 442, D:/proj/idea/toolkit/sass/style.sass */
+.work h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 35px;
+  margin-top: 20px;
+}
+/* line 448, D:/proj/idea/toolkit/sass/style.sass */
+.work .popup {
+  position: relative;
+  display: inline-block;
+}
+/* line 451, D:/proj/idea/toolkit/sass/style.sass */
+.work .popup.up1 {
+  bottom: 63px;
+  left: 20px;
+  width: 289px;
+}
+/* line 455, D:/proj/idea/toolkit/sass/style.sass */
+.work .popup.up2 {
+  bottom: 63px;
+  left: 200px;
+  width: 289px;
+}
+/* line 459, D:/proj/idea/toolkit/sass/style.sass */
+.work .popup.down1 {
+  top: 270px;
+  right: 583px;
+  width: 289px;
+  margin: 15px;
+}
+/* line 464, D:/proj/idea/toolkit/sass/style.sass */
+.work .popup.down2 {
+  top: 203px;
+  left: 500px;
+  width: 313px;
+}
+/* line 469, D:/proj/idea/toolkit/sass/style.sass */
+.work .popup p {
+  text-align: left;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* line 475, D:/proj/idea/toolkit/sass/style.sass */
+.up a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 478, D:/proj/idea/toolkit/sass/style.sass */
+.up a h3 {
+  text-align: center;
+  font-size: 16px;
+  text-decoration: underline;
+  font: black;
+  font-weight: bold;
+  margin: 20px;
+}
+
+/* line 486, D:/proj/idea/toolkit/sass/style.sass */
+footer {
+  height: 80px;
+  position: relative;
+  border-top: 1px solid black;
+  border-bottom: none;
+  background: white;
+}
+/* line 493, D:/proj/idea/toolkit/sass/style.sass */
+footer nav {
+  margin-top: 18px;
+  float: right;
+}
+/* line 496, D:/proj/idea/toolkit/sass/style.sass */
+footer .addr {
+  margin-top: 10px;
+}
+
+/* line 500, D:/proj/idea/toolkit/sass/style.sass */
+.feedback form {
+  width: 300px;
+}
+/* line 502, D:/proj/idea/toolkit/sass/style.sass */
+.feedback form h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+}
+/* line 506, D:/proj/idea/toolkit/sass/style.sass */
+.feedback form input {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding-left: 14px;
+  width: 285px;
+  height: 45px;
+  background: white;
+  display: block;
+  margin: auto auto 10px;
+  border: 1px solid darkgrey;
+}
+/* line 515, D:/proj/idea/toolkit/sass/style.sass */
+.feedback form button {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  width: 285px;
+  height: 68px;
+  background: #068136;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5cee71), color-stop(100%, #068136));
+  background: -webkit-linear-gradient(top, #5cee71, #068136);
+  background: -moz-linear-gradient(top, #5cee71, #068136);
+  background: -o-linear-gradient(top, #5cee71, #068136);
+  background: linear-gradient(top, #5cee71, #068136);
+  color: white;
+  text-shadow: 1px 2px 1px black;
+  text-transform: uppercase;
+  display: block;
+  margin: 10px auto auto;
+  font-size: 26px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+}
+/* line 530, D:/proj/idea/toolkit/sass/style.sass */
+.feedback form button:hover {
+  background: #5cee71;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #068136), color-stop(100%, #5cee71));
+  background: -webkit-linear-gradient(top, #068136, #5cee71);
+  background: -moz-linear-gradient(top, #068136, #5cee71);
+  background: -o-linear-gradient(top, #068136, #5cee71);
+  background: linear-gradient(top, #068136, #5cee71);
+}
+/* line 534, D:/proj/idea/toolkit/sass/style.sass */
+.feedback form textarea {
+  width: 285px;
+  height: 80px;
+  background: white;
+  display: block;
+  border: 1px solid darkgrey;
+  margin: 10px auto auto;
+}

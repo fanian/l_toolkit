@@ -1,0 +1,564 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic)
+$f: 'Open Sans', Sans-serif
+
+body
+  font-family: $f
+  background: white
+  min-width: 1200px
+  min-height: 200px
+  color: #000000
+
+*, *:before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  outline: none
+
+@import "compass/css3"
+@import "placeholderText"
+
+.wrapper
+  width: 960px
+  margin: 0 auto
+  position: relative
+
+.fl
+  float: left
+
+.fr
+  float: right
+
+.cb
+  clear: both
+
+input.error, textarea.error
+  box-shadow: 0 0 5px red !important
+
+label.error
+  display: none !important
+
+//input
+//  @include input-placeholder
+//    color: #000000
+//    font-size: 16px
+
+header
+  height: 80px
+  background: rgb(221, 221, 221)
+  nav
+    float: left
+    margin: 15px auto 0
+
+    ul
+      font-size: 14px
+      padding: 0
+      font-weight: bold
+      li
+        display: inline-block
+        float: left
+        text-transform: uppercase
+        margin-right: 20px
+      a
+        text-decoration: none
+        color: inherit
+  .addr
+    text-align: right
+    margin-top: 10px
+    h2
+      background: url(../img/call.png) left center no-repeat
+      font-size: 28px
+      font-weight: normal
+      margin: 0
+      padding-right: 20px
+
+    p
+      font-size: 16px
+      margin: 0
+
+.top
+  .wrapper
+    margin-top: -14px
+
+  background: url(../img/top.jpg) center no-repeat
+  height: 829px
+
+
+  .form
+    width: 320px
+    height: 609px
+    background: rgb(89, 89, 89)
+    +border-radius(10px)
+
+    .caption
+      padding-top: 15px
+
+      h3
+        margin-top: 0
+        font-size: 20px
+        text-align: center
+        text-transform: uppercase
+        color: #ffffff
+        font-weight: normal
+        margin-bottom: 20px
+    h4
+      margin-top: 22px
+      margin-bottom: 10px
+      font-size: 15px
+      text-align: center
+      font-weight: normal
+      color: #ffffff
+      display: inherit
+      line-height: 1.6em
+      &.left
+        text-align: left
+        margin-left: 20px
+        margin-top: 10px
+      span
+        font-size: 15px
+        text-align: center
+        font-weight: normal
+        color: #ffffff
+        padding-left: 27px
+        background: url(../img/call_white.png) left center no-repeat
+    .captionMiddle
+      width: 280px
+      margin: -30px auto auto
+      border-bottom: 1px solid #ffffff
+
+
+.flip-clock-dot
+  visibility: hidden
+
+.flip-clock-wrapper ul li a div div.inn
+  color: #3d3d3d
+  background-color: #d9d9d9
+//-o-animation: important
+//animation: important
+.clock
+  @include scale(0.7)
+  padding-top: 0px
+  margin-left: -68px
+  width: 561px
+  margin-top: -15px
+
+span
+  .flip-clock-label
+    color: #ffffff !important
+
+    text-transform: uppercase
+    font-size: 14px
+    left: 40px
+    top: 108px !important
+
+.flip-clock-wrapper
+  font: inherit
+  ul
+    margin: 1px
+
+.frm
+  height: 257px
+  form
+
+    input
+      @include border-radius(5px)
+      padding-left: 14px
+      width: 280px
+      height: 40px
+      background: #ffffff
+      display: block
+      margin: auto auto 20px
+      border: none
+      @include box-shadow(1px 2px 1px rgba(0, 0, 0, .8))
+    .button
+      @include border-radius(5px)
+      width: 280px
+      height: 60px
+      background: rgb(6, 129, 54)
+      +background(linear-gradient(top, rgb(92, 238, 113), rgb(6, 129, 54)))
+      color: #ffffff
+      text-transform: uppercase
+      display: block
+      margin: 20px auto auto 20px
+      font-size: 26px
+      border: none
+      @include box-shadow(1px 2px 1px rgba(0, 0, 0, .8))
+    .button:hover
+      +background(linear-gradient(top, rgb(6, 129, 54), rgb(92, 238, 113)))
+      background: rgb(92, 238, 113)
+
+.chosen
+  h2
+    text-align: center
+    font-size: 30px
+    font-weight: bold
+  .item
+    margin-bottom: 20px
+    img
+      width: 125px
+      height: 125px
+      float: left
+      margin-left: 20px
+
+    h4
+      text-align: left
+      float: left
+      font-size: 16px
+      width: 320px
+      padding-left: 20px
+      margin-top: 0
+      font-weight: normal
+  .attention
+    margin-top: -10px
+    img
+      width: 222px
+      height: 257px
+      float: left
+      margin-right: 25px
+    .prof
+      color: #ffffff
+      width: 712px
+      background: rgb(51, 146, 86)
+      +background(linear-gradient(top, rgb(51, 146, 86), rgb(22, 167, 46)))
+      +border-radius(10px)
+      display: inline-block
+      margin-bottom: 10px
+      p
+        font-size: 48px
+        display: inline-block
+        margin: 0
+        float: left
+        padding-left: 15px
+      h4
+        padding-left: 15px
+        font-weight: normal
+        margin-top: 13px
+        margin-left: 0
+        margin-right: 0
+        display: inline-block
+
+        font-size: 16px
+        font-weight: normal
+        float: left
+        width: 660px
+
+.how
+  .wrapper
+    width: 1000px
+
+  height: 445px
+  background: url(../img/bg_yellow.png) center no-repeat
+  margin-top: -80px
+  text-align: center
+  h2
+    font-weight: bold
+    font-size: 30px
+    text-align: center
+    margin-bottom: 20px
+  .items
+    h3
+      font-size: 18px
+    .item
+      width: 330px
+  h4
+    font-size: 16px
+    margin: 0
+
+.formWide
+  background: url(../img/bg_form.jpg) center no-repeat
+  height: 269px
+  text-align: center
+  h2
+    text-align: center
+    color: #ffffff
+    font-size: 30px
+    margin-bottom: 10px
+    margin-top: 20px
+    +text-shadow(1px 2px 1px rgb(0, 0, 0))
+    span
+      font-weight: bold
+  h3
+    color: #ffffff
+    font-size: 17px
+    font-weight: normal
+    +text-shadow(1px 2px 1px rgb(0, 0, 0))
+    span
+      background: url(../img/call_white_big.png) left no-repeat
+      padding-left: 30px
+      font-size: 22px
+
+  .frmW
+    height: inherit
+    @extend .frm
+    background: none
+
+    form
+      text-align: center
+      .pencils
+        display: inline-block
+        float: left
+        margin-left: 20px
+      input
+        margin-right: 20px
+        display: inline-block
+      .button
+        display: inline-block
+
+        margin: 0 0 0 -20px
+
+.reviews
+  text-align: center
+  margin-top: 0
+  margin-bottom: 30px
+  h2
+    font-size: 30px
+    font-weight: bold
+    text-align: center
+  .slider
+    height: 412px
+    h2
+    margin-bottom: 40px
+  .items
+    text-align: center
+
+    margin-bottom: 30px
+    h3
+      font-size: 22px
+      font-weight: bold
+      text-transform: uppercase
+      margin-bottom: 20px
+      line-height: 1.1em
+      margin-top: 24px
+    h4
+      font-size: 17px
+      font-weight: normal
+      margin-left: 20px
+      margin-right: 20px
+      margin-top: 0
+    h5
+      font-size: 12px
+      color: rgb(184, 184, 184)
+    .item
+      width: 320px
+      background: none
+    .item:last-child
+      background: none
+  button
+    display: inline-block
+    width: 160px
+    height: 40px
+    color: #ffffff
+    font-size: 16px
+    +border-radius(5px)
+    letter-spacing: -1px
+    border: none
+    +box-shadow(1px 2px 1px rgba(0, 0, 0, .8))
+    +text-shadow(1px 1px 1px rgb(0, 0, 0))
+
+  .button
+    display: inline-block
+    width: 160px
+    height: 40px
+    color: #ffffff
+    font-size: 16px
+    +border-radius(5px)
+    border: none
+    +box-shadow(1px 2px 1px rgba(0, 0, 0, .8))
+    padding-top: 8px
+    text-decoration: none
+    +text-shadow(1px 1px 1px rgb(0, 0, 0))
+
+  .comments
+    background: rgb(247, 162, 17)
+
+    +background(linear-gradient(top, rgb(255, 217, 96), rgb(247, 162, 17)))
+    margin-right: 10px
+  .comments:hover
+    background: rgb(253, 202, 65)
+  .write
+    background: rgb(6, 129, 54)
+    +background(linear-gradient(top, rgb(92, 238, 113), rgb(6, 129, 54)))
+  .write:hover
+    +background(linear-gradient(top, rgb(6, 129, 54), rgb(92, 238, 113)))
+    background: rgb(92, 238, 113)
+
+  button:active
+    @include box-shadow(0 0 0 rgb(0, 0, 0))
+  .button:active
+    @include box-shadow(0 0 0 rgb(0, 0, 0))
+
+.mln
+  margin-top: 20px
+  border-top: 1px solid #000000
+  margin-bottom: 10px
+  h2
+    text-align: center
+    font-size: 30px
+    margin-bottom: 0
+    span
+      color: #ffffff
+      font-weight: bold
+      background: url(../img/circle.png) center no-repeat
+      padding-top: 44px
+      width: 135px
+      height: 135px
+      display: inline-block
+  .russia
+    background: url(../img/russia.png) left center no-repeat
+    height: 400px
+    width: 1030px
+    margin-left: -50px
+    font-size: 18px
+    .text
+      h3
+        text-transform: uppercase
+        font-weight: bold
+        text-align: left
+
+      h4
+        font-weight: normal
+        text-align: left
+        margin-top: 0
+      ul
+        list-style: none
+        text-align: left
+        padding-left: 30px
+        li
+          display: block
+          width: 460px
+          height: 110px
+          padding-left: 90px
+          padding-top: 15px
+          span
+            font-weight: bold
+
+          &.mln1
+            background: url(../img/mln1.png) left center no-repeat
+          &.mln2
+            background: url(../img/mln2.png) left center no-repeat
+
+.work
+  background: url(../img/work.jpg) center no-repeat
+  height: 488px
+  h2
+    font-size: 30px
+    font-weight: bold
+    text-align: center
+    padding-bottom: 35px
+    margin-top: 20px
+  .popup
+    position: relative
+    display: inline-block
+    &.up1
+      bottom: 63px
+      left: 20px
+      width: 289px
+    &.up2
+      bottom: 63px
+      left: 200px
+      width: 289px
+    &.down1
+      top: 270px
+      right: 583px
+      width: 289px
+      margin: 15px
+    &.down2
+      top: 203px
+      left: 500px
+      width: 313px
+
+    p
+      text-align: left
+      font-size: 18px
+      margin: 0
+
+.up
+  a
+    text-decoration: none
+    color: inherit
+    h3
+      text-align: center
+      font-size: 16px
+      text-decoration: underline
+      font: black
+      font-weight: bold
+      margin: 20px
+
+footer
+  @extend header
+  height: 80px
+  position: relative
+  border-top: 1px solid black
+  border-bottom: none
+  background: #ffffff
+  nav
+    margin-top: 18px
+    float: right
+  .addr
+    margin-top: 10px
+
+.feedback
+  form
+    width: 300px
+    h3
+      text-transform: uppercase
+      text-align: center
+      font-size: 20px
+    input
+      @include border-radius(2px)
+      padding-left: 14px
+      width: 285px
+      height: 45px
+      background: #ffffff
+      display: block
+      margin: auto auto 10px
+      border: 1px solid darkgrey
+    button
+      @include border-radius(2px)
+      width: 285px
+      height: 68px
+      background: rgb(6, 129, 54)
+      +background(linear-gradient(top, rgb(92, 238, 113), rgb(6, 129, 54)))
+      color: #ffffff
+      +text-shadow(1px 2px 1px rgb(0, 0, 0))
+
+      text-transform: uppercase
+      display: block
+      margin: 10px auto auto
+      font-size: 26px
+      border: none
+      @include box-shadow(1px 2px 2px rgba(0, 0, 0, .8))
+    button:hover
+      background: rgb(92, 238, 113)
+
+      +background(linear-gradient(top, rgb(6, 129, 54), rgb(92, 238, 113)))
+    textarea
+      width: 285px
+      height: 80px
+      background: #ffffff
+      display: block
+      border: 1px solid darkgrey
+      margin: 10px auto auto
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
